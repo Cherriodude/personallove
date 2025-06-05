@@ -1,30 +1,38 @@
-<form action="https://api.web3forms.com/submit" method="POST" id="form">
-  <fieldset>
-    <legend>Contact Form</legend>
-    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
-    <input type="hidden" name="subject" value="New Submission from Web3Forms" />
-    <input type="hidden" name="redirect" value="https://web3forms.com/success" />
-    <input type="checkbox" name="botcheck" id="" style="display: none;" />
-    <div>
-      <label for="name">Full Name</label><br>
-      <input type="text" name="name" id="name" placeholder="John Doe" required />
-      <br><br>
-    </div>
-    <div>
-      <label for="email">Email Address</label><br>
-      <input type="email" name="email" id="email" placeholder="you@company.com" required /><br><br>
-    </div>
-    <div>
-      <label for="phone">Phone Number</label>
-      <br>
-      <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required /><br><br>
-    </div>
-    <div>
-      <label for="message">Your Message</label>
-      <br>
-      <textarea rows="5" name="message" id="message" placeholder="Your Message" required></textarea><br><br>
-    </div>
+<html>
+<body style="background-color:powderblue;">
 
-    <button type="submit"> Send Message </button>
-  </fieldset>
-</form>
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+
+<section class="contact-section">
+  <div class="contact-intro">
+    <h2 class="contact-title">HI LOVELYYY!!!</h2>
+    <p class="contact-description">
+      Fill out the form below and we'll get back to you as soon as possible.
+    </p>
+  </div>
+
+  <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+    <input type="hidden" name="access_key" value="ac11ab6a-61a1-4162-948b-3ab0c7712365" />
+    <input type="hidden" name="subject" value="MESSAGE FROM" />
+    <input type="hidden" name="from_name" value="PROJECTLA" />
+
+    <div class="form-group-container">
+      <div class="form-group">
+        <label for="name" class="form-label">TOPICC</label>
+        <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+      </div>
+      <div class="form-group">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
+      </div>
+    </div>
+    <button class="form-submit" type="submit">Send Message</button>
+  </form>
+
+</section>
