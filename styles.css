@@ -10,17 +10,6 @@
   margin-top: 1rem;
 }
 
-.contact-title {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  font-weight: 700;
-  color: rgb(255, 158, 227);
-}
-
-.contact-description {
-  color: gray;
-}
-
 .form-group-container {
   display: grid;
   gap: 1rem;
@@ -72,10 +61,59 @@
   border-radius: 0.375rem;
 }
 
+body
+{
+  background-color: powderblue;
+}
+
+h2
+{
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
 p
 {
-  font-family: verdana;
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
+.contact-title {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+.contact-description {
+  color: gray;
+}
+
+.divider {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.divider::before, .divider::after {
+  flex: 1;
+  content: '';
+  padding: 3px;
+  background-color: rgb(0, 0, 0);
+  margin: 5px;
+}
+
+img {
+  float: left;
+  border: 1px dotted black;
+  margin: 0px 20px 0px 0px;
+}
+
+.lovetext
+{color: red;}
 
 .ImageBorder
 {
