@@ -6,6 +6,13 @@
   padding: 3rem 1rem;
 }
 
+
+
+.ImageBorder
+{
+    border: 3px solid skyblue;
+}
+
 .contact-intro > * + * {
   margin-top: 1rem;
 }
@@ -14,10 +21,11 @@
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: 700;
+  color: rgb(255, 158, 227);
 }
 
 .contact-description {
-  color: rgb(107 114 128);
+  color: gray;
 }
 
 .form-group-container {
