@@ -10,7 +10,7 @@
 
 .intro {
   width: 100%;
-  max-width: 60rem;
+  max-width: 55rem;
   margin-left: auto;
   margin-right: auto;
   padding: 3rem 1rem;
@@ -85,6 +85,7 @@ h3
 p
 {
   text-indent: 30px;
+  color: #000000;
   text-align: justify;
   font-family: "Montserrat", serif;
   font-weight: 400;
@@ -116,16 +117,49 @@ p
 
 /*Img*/
 
+.ImgRightCorner
+{
+  height: 100px;
+  position: absolute;
+}
+
 .imageflex { display: flex; }
 .imageflexcontent { margin-left: 2px; margin-top: 0; }
 
-.ImgCenter
+.Queen1
 {
+  background-image: url(queen.jpg);
+  transform: rotate(5deg);
+  background-size: 250px;
   display: flex;
   object-fit: cover;
   width: 250px;
   height: 250px;
-  border: 10px solid rgb(58, 85, 135);
+  border: 5px solid rgb(58, 85, 135);
+  margin: auto;
+}
+.Queen2
+{
+  background-image: url(queen1.jpg);
+  transform: rotate(10deg);
+  background-size: 250px;
+  display: flex;
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+  border: 5px solid rgb(81, 0, 0);
+  margin: auto;
+}
+.Queen3
+{
+  background-image: url(queen2.jpg);
+  transform: rotate(-15deg);
+  background-size: 250px;
+  display: flex;
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+  border: 5px solid rgb(62, 0, 52);
   margin: auto;
 }
 
