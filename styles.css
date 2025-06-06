@@ -6,16 +6,6 @@
   padding: 3rem 1rem;
 }
 
-p
-{
-  font-family: verdana;
-}
-
-.ImageBorder
-{
-    border: 3px solid skyblue;
-}
-
 .contact-intro > * + * {
   margin-top: 1rem;
 }
@@ -80,4 +70,14 @@ p
   color: #fff;
   padding: 13px 5px;
   border-radius: 0.375rem;
+}
+
+p
+{
+  font-family: verdana;
+}
+
+.ImageBorder
+{
+    border: 3px solid skyblue;
 }
