@@ -151,6 +151,11 @@ p
   font-style: normal;
 }
 
+.complimentText {
+  text-indent: 0px;
+  text-align: center;
+}
+
 .remindersText
 {
   text-indent: 0px;
