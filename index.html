@@ -3,16 +3,22 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oleo+Script:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-<link rel=“stylesheet” type=“text/css” href=“styles.css”> 
-<link rel="stylesheet" href="styles.css">
+<link rel=“stylesheet” type=“text/css” href=“css/styles.css”> 
+<link rel="stylesheet" href="css/styles.css">
 
-<img src="kuromiIcon1.png" class="ImgRightCorner">
+<audio src="sounds/thud.mp3" id="thudSound"></audio>
+
+<img src="icons/kuromiSkull.png" class="ImgTopLeftIcon" onclick="showRandomQueenImage()">
+
 <section class="intro">
-  <div class="contact-intro">
-    <h4>HI, LOVELY</h4>
-    <p class="subtitle">A digital loveletter by your manliligaw, Angelo</p>
-    <div class="Queen3">
-      <div class="Queen2"><div class="Queen1"></div></div></div>
+  <div class="contact-intro" id="introDiv">
+    <div id="reminders">
+      <p class="remindersText">My love, stop staying up so late... and start eating more... and take care of yourself more >:(</p>
+    </div>
+<img id="randomQueenImage" src="">
+    <h1 class="bigHeading" onclick="lovelyClicked()">HI, LOVELY</h1>
+    <p class="subtitle">A digital love letter by your manliligaw, Angelo</p>
+    <a href="https://cherriodude.github.io/personallove/archive.html"><img src="queen/queen.jpg" class="Queen1"></a>
     <br>
     <ul class="nav">
       <li><a href="https://cherriodude.github.io/personallove/message.html">Message me!</a></li>
@@ -21,12 +27,10 @@
     </ul>
     <br>
     <p>Hello to my <strong> adorable, graceful, caring, sweet (hmm), lovely, graceful, humble, admirable, generous, wise, organized, creative, charming, maganda, beautiful, stunning, pretty, gorgeous, cute, kind, giving, funny, elegant, and hardworking</strong> baby.</p>
-    <p class="lovetext"> I love you, really.</p>
   </div>
 </section>
-
-
-<p id="demo"></p>
+<p class="creatorText">Made with love <3 by Angelo</p>
+<audio src="sounds/click.wav" id="clickSound"></audio>
+  <script src="scripts/scripts.js"></script>
 </body>
 </html>
-

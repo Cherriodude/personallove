@@ -1,15 +1,33 @@
 <html>
-<body>
 <style>
 </style>
-</body>
-</html>
+<body>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Creepster&family=Jacquard+12&family=Montserrat:ital,wght@0,400;1,900&family=Oleo+Script:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-<link rel=“stylesheet” type=“text/css” href=“styles.css”> 
-<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Jersey+25&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oleo+Script:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Tiny5&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link rel=“stylesheet” type=“text/css” href=“css/styles.css”>
 
-<h4>Work in progress... I'm still too shy to invite you to games...</h4>
-<img src="kuromiIcon2.png" style="margin: auto">
-<p class="roundedText"><a href="https://cherriodude.github.io/personallove/">Go back...</a></p>
+<section class="introSmall">
+    <a class="homeButton" href="https://cherriodude.github.io/personallove/">Home</a>
+    <h4 class="gamesListTitle">Let's Play Games!</h4>
+    <div class="gameList">
+        <img src="gameIcons/roblox.webp" id="game1" onclick="game1(), gameIconClick()" class="gameIcon">
+        <img src="gameIcons/minecraft.webp" id="game2" onclick="game2(), gameIconClick()" class="gameIcon">
+        <img src="gameIcons/stardewValley.png" id="game3" onclick="game3(), gameIconClick()" class="gameIcon">
+        <img src="gameIcons/monopoly.png" id="game4" onclick="game4(), gameIconClick()" class="gameIcon">
+        <img src="gameIcons/uno.png" id="game5" onclick="game5(), gameIconClick()" class="gameIcon">
+</div>
+<div>
+    <p id="gameTitle">Games I wanna play with you but haven't yet.</p>
+    <p id="gameDesc"></p>
+</div>
+<div id="robloxRandomizer">
+    <button id="gameRandomButton" class="gameRandomButton" onclick="randomRobloxHorrorGame()">Horror</button>
+    <button id="gameRandomButton2" class="gameRandomButton" onclick="randomRobloxGame()">Not Horror</button>
+</div>
+</section>
+<audio src="sounds/click.wav" id="clickSound"></audio>
+<script src="scripts/gamesScript.js"></script>
+</body>
+</html>
