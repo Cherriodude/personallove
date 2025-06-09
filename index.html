@@ -5,16 +5,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oleo+Script:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <link rel=“stylesheet” type=“text/css” href=“css/styles.css”> 
 <link rel="stylesheet" href="css/styles.css">
+
 <header>
   <div class="topLeftIcon"><img src="icons/kuromiSkull.png" class="ImgTopLeftIcon" onclick="showRandomQueenImage()"></div>
   <div class="headerSpace"></div>
-  <p id="creatorText">Made with love <3 by Angelo</p>
+  <a href="https://cherriodude.github.io/personallove/archive.html"><p id="creatorText"">Made with love <3 by Angelo</p></a>
 </header>
+
 <section id="homePage" class="mainPage">
+
 <section id="homeLeft" class="homeLeft">
   <div id="titleText">
-    <h1 class="bigHeading" onclick="lovelyClicked()">HI,<br> DARLING.</h1>
-    <p class="subtitle">A digital love letter by your manliligaw, Angelo <3</p>
+    <h1 class="bigHeading" onclick="click()">HI,<br> DARLING.</h1>
+    <a href="https://cherriodude.github.io/personallove/gallery.html"><p class="subtitle">A digital love letter by your manliligaw, Angelo <3</p></a>
 </div>
   <div id="navMenu">
     <ul class="nav">
@@ -24,17 +27,22 @@
     </ul>
 </div>
   <div id="complimentEnd">
-    <p class="complimentText">Hello to my <strong> adorable, graceful, caring, sweet (hmm), lovely, graceful, humble, admirable, generous, wise, organized, creative, charming, maganda, beautiful, stunning, pretty, gorgeous, cute, kind, giving, funny, elegant, and hardworking</strong> baby.</p>
+    <p class="complimentText" onclick="lovelyClicked()">Hello to my <strong> adorable, graceful, caring, sweet (hmm), lovely, graceful, humble, admirable, generous, wise, organized, creative, charming, maganda, beautiful, stunning, pretty, gorgeous, cute, kind, giving, funny, elegant, and hardworking</strong> baby.</p>
 </div>
 </section>
 
 <section id="homeRight" class="homeRight">
-    <div class="homeImageBorder"><a href="https://cherriodude.github.io/personallove/archive.html"><img src="queen/queen15.jpg" id="homeImage"></a></div>
-    <div id="reminders">
-      <p class="remindersText">My love, stop staying up so late... and start eating more... and take care of yourself more >:(</p>
+    <div class="homeImageBorder">
+      <p id=homeRightText></p>
+      <img src="queen/queen15.jpg" id="homeImage">
     </div>
-    <img id="randomQueenImage" src="">
+    <div id="rightToggleButton" onclick="rightToggleClick()"></div>
 </section>
+<img id="randomQueenImage" src="">
+<div id="reminders">
+  <p class="remindersText">HIII MY LOVEE, LET'S GO ON A CAFE ON BAYAN ^^</p>
+</div>
+
 </section>
 <audio src="sounds/thud.mp3" id="thudSound"></audio>
 <audio src="sounds/click.wav" id="clickSound"></audio>

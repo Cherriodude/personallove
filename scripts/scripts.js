@@ -31,6 +31,26 @@ function click() {
         clickSound.play();
 }
 
+function switchPallete() {
+var background = document.body
+background.style.background = "#AFDDFF"
+background.style.backgroundImage = "radial-gradient(#60B5FF 1.5px, transparent 0)"
+}
+
+function rightToggleClick() {
+        clickSound.load();
+        clickSound.volume = 0.5
+        clickSound.play();
+
+          var homeImage = document.getElementById("homeImage");
+          var rightText = document.getElementById("homeRightText");
+  if (homeImage.style.display === "none") {
+    homeImage.style.display = "block", rightText.style.margin="0", rightText.innerHTML="";
+  } else {
+    homeImage.style.display = "none", rightText.style.margin="1em", rightText.innerHTML="My pretty baby, stop staying up so late... and start eating more... and take care of yourself more >:(";
+  }
+}
+
 function lovelyClicked() {
         clickSound.load();
         clickSound.volume = 0.5
