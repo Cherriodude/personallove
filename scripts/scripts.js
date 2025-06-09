@@ -5,7 +5,7 @@ var clicks = 0;
 
 function showRandomQueenImage() {
             let pickedRandomQueenImageNum;
-            pickedRandomQueenImageNum = Math.floor(Math.random() * 15) + 1;
+            pickedRandomQueenImageNum = Math.floor(Math.random() * 14) + 1;
             let randomQueenImageFile;
             randomQueenImageFile = "queen/queen" + pickedRandomQueenImageNum + ".jpg";
             let randomQueenImage = document.getElementById("randomQueenImage");
