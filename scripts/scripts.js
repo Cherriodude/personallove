@@ -25,6 +25,12 @@ function showRandomQueenImage() {
   document.getElementById("creatorText").innerHTML = clicks;
 }
 
+function click() {
+          clickSound.load();
+        clickSound.volume = 0.5
+        clickSound.play();
+}
+
 function lovelyClicked() {
         clickSound.load();
         clickSound.volume = 0.5
