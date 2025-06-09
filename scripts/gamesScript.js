@@ -6,7 +6,7 @@ const randomGameButton2 = document.getElementById("gameRandomButton2");
 
 function gameIconClick() {
             clickSound.load();
-            clickSound.volume = 0.2
+            clickSound.volume = 0.5
             clickSound.play();
 }
 

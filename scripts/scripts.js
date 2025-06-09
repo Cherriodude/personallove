@@ -1,7 +1,7 @@
 var spaceWidth;
 var spaceHeight;
 let clickSound = document.getElementById('clickSound');
-
+var clicks = 0;
 
 function showRandomQueenImage() {
             let pickedRandomQueenImageNum;
@@ -11,19 +11,21 @@ function showRandomQueenImage() {
             let randomQueenImage = document.getElementById("randomQueenImage");
             randomQueenImage.src = randomQueenImageFile
             document.getElementById("randomQueenImage").style.display = "block";
-            spaceWidth = document.getElementById('introDiv').clientHeight - randomQueenImage.height;
-            spaceHeight = document.getElementById('introDiv').clientWidth - randomQueenImage.width;
+            spaceWidth = document.getElementById('homePage').clientHeight - randomQueenImage.height;
+            spaceHeight = document.getElementById('homePage').clientWidth - randomQueenImage.width;
             randomQueenImage.style.top = Math.round(Math.random() * spaceWidth) + 'px';
             randomQueenImage.style.left = Math.round(Math.random() * spaceHeight) + 'px';
             let thudSound = document.getElementById('thudSound');
             thudSound.load();
             thudSound.volume = 0.2
             thudSound.play();
+            clicks += 1;
+  document.getElementById("creatorText").innerHTML = clicks;
 }
 
 function lovelyClicked() {
         clickSound.load();
-        clickSound.volume = 0.2
+        clickSound.volume = 0.5
         clickSound.play();
 
           var remindersDiv = document.getElementById("reminders");
