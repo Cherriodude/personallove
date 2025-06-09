@@ -1,7 +1,7 @@
 /*Page Formatting*/
 
 .smallPage {
-  width: 100%;
+  overflow: hidden;
   max-width: 85vw;
   margin: auto;
 }
@@ -11,7 +11,6 @@
   margin-top: 1%;
   margin-left: 1%;
   margin-right: auto;
-  padding: 1em 1em;
 }
 
 body {
@@ -19,6 +18,43 @@ body {
   background-image: radial-gradient(#7F55B1 1.5px, transparent 0);
   background-size: 40px 40px;
   background-position: -20px 20px;
+}
+
+/*Love*/
+
+.loveContainer {
+  padding-bottom: 10%;
+  display: block;
+}
+
+.loveLetter{
+  color: #7F55B1;
+  background-color: #F49BAB;
+  padding: 5%;
+  border: 3px solid #7F55B1;
+  border-radius: 5px;
+}
+
+.lora-head {
+  margin-top: 0;  color: #7F55B1;
+  margin-bottom: 0;
+  text-align: left;
+  line-height: 100px;
+  text-indent: 0px;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 95px;
+  font-style: italic;
+}
+
+.lora-body {
+  text-indent: 3em;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 24px;
+  font-style: normal;
 }
 
 /*Homepage Header*/
@@ -64,18 +100,20 @@ float: right;
 
 /*Title*/
 .mainPage {
-    height: 90%;
+    height: 100%;
     max-height: 90%;
 display: flex;
 }
 
 .homeLeft {
+  height: inherit;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-left: 2%;
     padding-right: 2%;
-    width: 45%;
+    width: 60%;
+    max-width: 60%;
 }
 
 
@@ -83,8 +121,9 @@ display: flex;
 {
   margin-top: 0;
   margin-bottom: 0;
+  line-height: 100%;
   letter-spacing: 5px;
-  font-size: 6.5em;
+  font-size: 9vw;
   color: #FFE1E0;
   font-family: "Abril Fatface", serif;
   font-weight: 400;
@@ -96,7 +135,7 @@ display: flex;
 .bigHeading:hover
 {
   color:#7F55B1;
-  font-size: 6.8em;
+  font-size: 9.2vw;
   font-size-adjust: 20px;
 }
 
@@ -104,7 +143,7 @@ display: flex;
   margin-top: 0;
   font-family: "Abril Fatface", serif;
   font-weight: 200;
-  font-size: .8em;
+  font-size: 1.5vw;
   font-style: normal;
   color: #000;
 }
@@ -117,21 +156,25 @@ font-size: .8em;
 
 /*Aside*/
 .homeRight {
+  display: flex;
+  justify-content: end;
+  padding-top: 1%;
     padding-bottom: 1%;
-    margin-right: 5%;
-    margin-left: 5%;
+    padding-right: 10%;
+    padding-left: 5%;
     width: 40%;
 }
 
 .homeRight img {
 height: 100%;
-width: 100%;
+width: 100%;    
+object-fit: contain; 
 }
 
-#homeImage {
-    object-fit: contain; 
+.homeImageBorder {
+  border: 5px solid #FFE1E0;
+  background-color: #FFE1E0;
 }
-
 /*Navigation*/
 
 a
@@ -147,41 +190,32 @@ a
 .nav {
 float: left;
   text-decoration: none;
-  width: 300%;
-  max-width: 300px;
+  width: 40%;
   background-color:#FFE1E0; 
   list-style-type: none;
   margin: auto;
-  padding: 0;
+  padding: 1%;
 }
+
+
 
 .nav li {
   text-decoration: none;
   display: block;
-  font-size: .7em;
+  font-size: 1em;
   padding: 10px;
   color: darkslategrey;
   transition: all 500ms;
 }
 
 .nav li:hover {
+  background-color: #F49BAB;
   color: blueviolet;
-  font-size: 1em;
+  font-size: 1.2em;
   font-size-adjust: 20px;
 }
 
 /*UI*/
-
-.spanInvis { 
-  position:absolute; 
-  width:100%;
-  height:100%;
-  top:0;
-  left: 0;
-
-  z-index: 1;
-  background-color: #00000000;
-}
 
 #reminders {
   text-decoration: none;
@@ -196,8 +230,29 @@ float: left;
   padding: 10px;
 }
 
+.gameText {
+  color: #7F55B1;
+  background-color: #F49BAB;
+  padding: 5%;
+  border: 3px solid #7F55B1;
+  border-radius: 5px;
+}
+
 .roundedButton {
   background-color:#FFE1E0;
+  border: none;
+  padding: 13px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px 5px;
+  border-radius: 12px;
+  font-size: 20px;
+  transition: 500ms;
+}
+
+.roundedButton:hover {
+  background-color:#c9b3b2;
   border: none;
   padding: 13px;
   text-align: center;
@@ -325,26 +380,6 @@ p
   color: red;
   text-align: center;
 }
-
-.lora-head {
-  text-indent: 0px;
-  font-family: "Lora", serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-size: 95px;
-  font-style: italic;
-}
-
-.lora-body {
-  text-indent: 200px;
-  font-family: "Lora", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-size: 24px;
-  font-style: normal;
-}
-
-
 
 #gameTitle {
   margin-top: 5px;

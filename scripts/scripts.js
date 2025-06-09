@@ -5,7 +5,7 @@ var clicks = 0;
 
 function showRandomQueenImage() {
             let pickedRandomQueenImageNum;
-            pickedRandomQueenImageNum = Math.floor(Math.random() * 14) + 1;
+            pickedRandomQueenImageNum = Math.floor(Math.random() * 15) + 1;
             let randomQueenImageFile;
             randomQueenImageFile = "queen/queen" + pickedRandomQueenImageNum + ".jpg";
             let randomQueenImage = document.getElementById("randomQueenImage");
@@ -21,7 +21,7 @@ function showRandomQueenImage() {
             thudSound.play();
             clicks += 1;
     document.getElementById("creatorText").style.color = "#fff";
-    document.getElementById("creatorText").style.fontSize = "1.5em";
+    document.getElementById("creatorText").style.fontSize = "2em";
   document.getElementById("creatorText").innerHTML = clicks;
 }
 
