@@ -35,7 +35,7 @@ float: right;
   font-family: "Abril Fatface", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1empx;
+  font-size: 1em;
   color: #7F55B1;
 }
 
@@ -84,7 +84,7 @@ display: flex;
   margin-top: 0;
   margin-bottom: 0;
   letter-spacing: 5px;
-  font-size: 90px;
+  font-size: 6.5em;
   color: #FFE1E0;
   font-family: "Abril Fatface", serif;
   font-weight: 400;
@@ -96,7 +96,7 @@ display: flex;
 .bigHeading:hover
 {
   color:#7F55B1;
-  font-size: 95px;
+  font-size: 6.8em;
   font-size-adjust: 20px;
 }
 
@@ -104,7 +104,7 @@ display: flex;
   margin-top: 0;
   font-family: "Abril Fatface", serif;
   font-weight: 200;
-  font-size: 15px;
+  font-size: .8em;
   font-style: normal;
   color: #000;
 }
