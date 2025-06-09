@@ -3,12 +3,26 @@ const gameDesc = document.getElementById("gameDesc");
 let clickSound = document.getElementById('clickSound');
 const randomGameButton = document.getElementById("gameRandomButton");
 const randomGameButton2 = document.getElementById("gameRandomButton2");
+let gambleText = 
 
 function gameIconClick() {
             clickSound.load();
             clickSound.volume = 0.5
             clickSound.play();
 }
+
+
+function gamble() {
+let gambleRandom = Math.floor(Math.random() * 100) + 1;
+if (gambleRandom >= 46 && gambleRandom <= 100) {document.getElementById("gamble").innerHTML = "45"}
+if (gambleRandom >= 16 && gambleRandom <= 45) {document.getElementById("gamble").innerHTML = "20"}
+if (gambleRandom >= 6 && gambleRandom <= 15) {document.getElementById("gamble").innerHTML = "10"}
+if (gambleRandom >= 2 && gambleRandom <= 6) {document.getElementById("gamble").innerHTML = "5"}
+if (gambleRandom >= 1) {document.getElementById("gamble").innerHTML = "1"}
+}
+
+
+
 
 function game1() {
     gameTitle.innerHTML = "Roblox"
