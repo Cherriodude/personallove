@@ -1,6 +1,6 @@
 /*Page Formatting*/
 
-.introSmall {
+.smallPage {
   width: 100%;
   max-width: 85vw;
   margin: auto;
@@ -237,7 +237,7 @@ float: left;
   text-decoration: none;
   padding: 10px;
   text-align: center;
-  background-color: #FFD2A0;
+  background-color: #FFE1E0;
   margin: 5px;
   font-size: 15px;
   font-family: "Tiny5", sans-serif;
@@ -368,8 +368,6 @@ p
 }
 
 /*Img*/
-
-
 
 #randomQueenImage {
   display: none;
