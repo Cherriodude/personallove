@@ -84,6 +84,7 @@ function randomRobloxHorrorGame() {
         urls[34] = "https://www.roblox.com/games/15238994315/Requiem-HORROR";
         urls[35] = "https://www.roblox.com/games/16008839781/STOCK-UP-HORROR";
         urls[36] = "https://www.roblox.com/games/16709410528/Night-Watch";
+        urls[37] = "https://www.roblox.com/games/136431686349723/HUNTED-HORROR";
 
     var random = Math.floor(Math.random()*urls.length);
         clickSound.load();
