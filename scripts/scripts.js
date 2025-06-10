@@ -4,6 +4,8 @@ let clickSound = document.getElementById('clickSound');
 let sparkleSound = document.getElementById('sparkleSound');
 var clicks = 0;
 
+
+
 function showRandomQueenImage() {
             let pickedRandomQueenImageNum;
             pickedRandomQueenImageNum = Math.floor(Math.random() * 14) + 1;
@@ -26,36 +28,45 @@ function showRandomQueenImage() {
   document.getElementById("creatorText").innerHTML = clicks;
 }
 
+
+
 function titleClick() {
           clickSound.load();
         clickSound.volume = 0.75
 
         clickSound.play();
-          var titleHeader = document.getElementById("titleHeader");
+        
+var titleHeader = document.getElementById("titleHeader");
 
-          if (titleHeader.innerHTML === "TO<br> HANSHYNAH.") {
-titleHeader.innerHTML="HI,<br> DARLING.", titleHeader.style.fontSize = "9vw";  } 
 
-          else if (titleHeader.innerHTML === "HI,<br> DARLING.") {
-    titleHeader.innerHTML="HI,<br> MY BABY!"; }
-else if (titleHeader.innerHTML === "HI,<br> MY BABY!") {
-    titleHeader.innerHTML="HI,<br> MY LOVE.";
-      } else if (titleHeader.innerHTML === "HI,<br> MY LOVE.") {
-    titleHeader.innerHTML="HI,<br> PRETTY!";
-      } else if (titleHeader.innerHTML === "HI,<br> PRETTY!") {
-    titleHeader.innerHTML="HI,<br> BEAUTIFUL.";
-      } else if (titleHeader.innerHTML === "HI,<br> BEAUTIFUL.") {
-    titleHeader.innerHTML="HI,<br> GANDA!";
-      } else if (titleHeader.innerHTML === "HI,<br> GANDA!") {
-    titleHeader.innerHTML="HI,<br> MY HONEY.";
-      } else if (titleHeader.innerHTML === "HI,<br> MY HONEY.") {
-    titleHeader.innerHTML="HI,<br> CUTIE!"; }
-      else if (titleHeader.innerHTML === "HI,<br> HONEY.") {
-    titleHeader.innerHTML="HI,<br> CUTIE!"; }
-          else if (titleHeader.innerHTML === "HI,<br> CUTIE!") {
-    titleHeader.innerHTML="HELLO,<br> MY MONKEY."; }
-          else if (titleHeader.innerHTML === "HELLO,<br> MY MONKEY.") {
-    titleHeader.innerHTML="TO<br> HANSHYNAH.", titleHeader.style.fontSize = "8vw"; }
+
+          if (titleHeader.innerHTML === "TO HANSHYNAH.") {
+titleHeader.innerHTML="HI, DARLING.", titleHeader.style.fontSize = "9vw";  } 
+
+          else if (titleHeader.innerHTML === "HI, DARLING.") {
+    titleHeader.innerHTML="HI, MY BABY!"; }
+else if (titleHeader.innerHTML === "HI, MY BABY!") {
+    titleHeader.innerHTML="HI, MY LOVE.";
+      } else if (titleHeader.innerHTML === "HI, MY LOVE.") {
+    titleHeader.innerHTML="HI, PRETTY!";
+      } else if (titleHeader.innerHTML === "HI, PRETTY!") {
+    titleHeader.innerHTML="HI, BEAUTIFUL.";
+      } else if (titleHeader.innerHTML === "HI, BEAUTIFUL.") {
+    titleHeader.innerHTML="HI, GANDA!";
+      } else if (titleHeader.innerHTML === "HI, GANDA!") {
+    titleHeader.innerHTML="HI, MY HONEY.";
+      } else if (titleHeader.innerHTML === "HI, MY HONEY.") {
+    titleHeader.innerHTML="HI, CUTIE!"; }
+      else if (titleHeader.innerHTML === "HI, HONEY.") {
+    titleHeader.innerHTML="HI, CUTIE!"; }
+          else if (titleHeader.innerHTML === "HI, CUTIE!") {
+    titleHeader.innerHTML="HELLO, MY MONKEY."; }
+          else {
+    titleHeader.innerHTML="TO HANSHYNAH.", titleHeader.style.fontSize = "8vw"; }
+
+
+
+
 }
 
 function switchPallete() {
@@ -98,3 +109,5 @@ function subtitleClick() {
         sparkleSound.play();
 homeImage.src = "queen/queen2.jpg"
 }
+
+
