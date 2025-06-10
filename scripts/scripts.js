@@ -1,6 +1,7 @@
 var spaceWidth;
 var spaceHeight;
 let clickSound = document.getElementById('clickSound');
+let sparkleSound = document.getElementById('sparkleSound');
 var clicks = 0;
 
 function showRandomQueenImage() {
@@ -92,8 +93,8 @@ function lovelyClicked() {
 }
 
 function subtitleClick() {
-        clickSound.load();
-        clickSound.volume = 0.75
-        clickSound.play();
+        sparkleSound.load();
+        sparkleSound.volume = 0.75
+        sparkleSound.play();
 homeImage.src = "queen/queen2.jpg"
 }
