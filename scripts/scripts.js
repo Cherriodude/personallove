@@ -25,10 +25,36 @@ function showRandomQueenImage() {
   document.getElementById("creatorText").innerHTML = clicks;
 }
 
-function click() {
+function titleClick() {
           clickSound.load();
-        clickSound.volume = 0.5
+        clickSound.volume = 0.75
+
         clickSound.play();
+          var titleHeader = document.getElementById("titleHeader");
+
+          if (titleHeader.innerHTML === "TO<br> HANSHYNAH.") {
+titleHeader.innerHTML="HI,<br> DARLING.", titleHeader.style.fontSize = "9vw";  } 
+
+          else if (titleHeader.innerHTML === "HI,<br> DARLING.") {
+    titleHeader.innerHTML="HI,<br> MY BABY!"; }
+else if (titleHeader.innerHTML === "HI,<br> MY BABY!") {
+    titleHeader.innerHTML="HI,<br> MY LOVE.";
+      } else if (titleHeader.innerHTML === "HI,<br> MY LOVE.") {
+    titleHeader.innerHTML="HI,<br> PRETTY!";
+      } else if (titleHeader.innerHTML === "HI,<br> PRETTY!") {
+    titleHeader.innerHTML="HI,<br> BEAUTIFUL.";
+      } else if (titleHeader.innerHTML === "HI,<br> BEAUTIFUL.") {
+    titleHeader.innerHTML="HI,<br> GANDA!";
+      } else if (titleHeader.innerHTML === "HI,<br> GANDA!") {
+    titleHeader.innerHTML="HI,<br> MY HONEY.";
+      } else if (titleHeader.innerHTML === "HI,<br> MY HONEY.") {
+    titleHeader.innerHTML="HI,<br> CUTIE!"; }
+      else if (titleHeader.innerHTML === "HI,<br> HONEY.") {
+    titleHeader.innerHTML="HI,<br> CUTIE!"; }
+          else if (titleHeader.innerHTML === "HI,<br> CUTIE!") {
+    titleHeader.innerHTML="HELLO,<br> MY MONKEY."; }
+          else if (titleHeader.innerHTML === "HELLO,<br> MY MONKEY.") {
+    titleHeader.innerHTML="TO<br> HANSHYNAH.", titleHeader.style.fontSize = "8vw"; }
 }
 
 function switchPallete() {
@@ -39,7 +65,8 @@ background.style.backgroundImage = "radial-gradient(#60B5FF 1.5px, transparent 0
 
 function rightToggleClick() {
         clickSound.load();
-        clickSound.volume = 0.5
+        clickSound.volume = 0.75
+
         clickSound.play();
 
           var homeImage = document.getElementById("homeImage");
@@ -53,7 +80,7 @@ function rightToggleClick() {
 
 function lovelyClicked() {
         clickSound.load();
-        clickSound.volume = 0.5
+        clickSound.volume = 0.75
         clickSound.play();
 
           var remindersDiv = document.getElementById("reminders");
@@ -62,4 +89,11 @@ function lovelyClicked() {
   } else {
     remindersDiv.style.display = "block";
   }
+}
+
+function subtitleClick() {
+        clickSound.load();
+        clickSound.volume = 0.75
+        clickSound.play();
+homeImage.src = "queen/queen2.jpg"
 }
